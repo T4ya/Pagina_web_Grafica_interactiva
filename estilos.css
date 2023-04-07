@@ -1,0 +1,553 @@
+/*Estilos Para la página, la página tiene que ser totalmente responsive*/
+/*Utilizar los siguientes tamaños teléfono celular (<800), tableta o portátil sencillo (800 - 1200) y pantallas de escritorio (>1200)*/
+
+/*Estilos para el body*/
+body {
+  background-color: #f2f2f2; /*Color de fondo*/
+  font-family: 'Roboto', sans-serif; /*Fuente de letra*/
+  font-size: 16px; /*Tamaño de letra*/
+  color: #000000; /*Color de letra*/
+  margin: 0; /*Margen*/
+  padding: 0; /*Relleno*/
+  padding-bottom: 20%;
+  text-align: justify; /*Alineación*/
+}
+
+/*Ocultar el menu de navegación*/
+nav {
+  display: none;
+}
+
+/*Aplicar estilos a la flecha para al tope de la página*/
+.top {
+  color: #223c7a; /*Color del icono*/
+  font-size: 2em; /*Tamaño del icono*/
+  position: fixed; /*Posición fija*/
+  bottom: 50px; /*Distancia desde abajo*/
+  right: 50px; /*Distancia desde la derecha*/
+  height: auto; /*Altura*/
+  width: auto; /*Ancho*/
+  border: 2px solid #ccc; /*Borde*/
+  border-radius: 40%; /*Borde redondeado*/
+  padding: 10px; /*Relleno*/
+  z-index: 999; /*Posición en la capa*/
+  background-color: #cccccccc;
+}
+
+/*Centrar el título de la página y aplicarle más estilos*/
+.Titulo {
+  /*Alinear el texto al centro*/
+  text-align: center;
+  /*Aumentar el tamaño de la fuente*/
+  font-size: 2em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+  /*Aplicar color de fondo*/
+  background-color: rgba(95, 158, 160, 0.379);
+  /*Extender el fondo hasta el borde de la página*/
+  padding: 0 20px;
+}
+
+/*Estilos para el título*/
+h1 {
+  font-size: 2em; /*Tamaño de letra*/
+  font-weight: 700; /*Grosor de letra*/
+  margin: 0; /*Margen*/
+  padding: 0; /*Relleno*/
+  text-align: center; /*Alineación*/
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Estilos para el título secundario*/
+h2 {
+  font-size: 0.8em; /*Tamaño de letra*/
+  font-weight: 500; /*Grosor de letra*/
+  margin: 0; /*Margen*/
+  padding: 0; /*Relleno*/
+  text-align: center; /*Alineación*/
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+  padding: 2%;
+}
+
+/*Estilos para las secciones*/
+section {
+  padding-bottom: 2%;
+}
+
+/*Estilos para el caption de cada imagen*/
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  font-style: italic;
+  padding: 2%;
+}
+
+/*Estilos para la imagen de la página principal, centrarlas y darles un tamaño*/
+.imagenes figure {
+  display: block; /*Mostrar la imagen como un bloque*/
+  margin: 0 auto; /*Centrar la imagen*/
+  text-align: center; /*Alineación*/
+  justify-content: center; /*Justificar el contenido*/
+  padding: 1%;
+}
+
+.imagenes img {
+  border-radius: 50%; /*Borde redondeado*/
+  width: 200px; /*Ancho*/
+  height: 200px; /*Altura*/
+  border: 1px solid #3a3a3a; /*Borde*/
+  padding: 5px; /*Relleno*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.imagenes img:hover {
+  border-radius: 0%; /*Quitar bordes redondeados*/
+  transform: scale(1); /*Aumentar el tamaño de la imagen*/
+  transition: 0.5s; /*Tiempo de transición*/
+  width: 250px; /*Ancho*/
+  height: 250px; /*Altura*/
+}
+
+/*Estilos para los botones (Frame)*/
+.Botones {
+  text-align: center; /*Alineación*/
+  vertical-align: top; /*Alineación vertical*/
+  margin: 0 auto; /*Centrar la imagen*/
+  font-size: 1em; /*Tamaño de letra*/
+  font-weight: bold; /*Grosor de letra*/
+  background-image: linear-gradient(to bottom, rgba(95, 158, 160, 0.379), #f2f2f2);
+}
+
+/*Estilos para los botones (Botones)*/
+.Botones button {
+  background-color: #f2f2f2; /*Color de fondo*/
+  border: 1px solid #3a3a3a; /*Borde*/
+  border-radius: 5px; /*Borde redondeado*/
+  padding: 10px 20px; /*Relleno*/
+  margin: 10px; /*Margen*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*Sombra*/
+  color: #3a3a3a; /*Color de letra*/
+  background-color: rgba(141, 244, 196, 0.519); /*Color de fondo*/
+  font-size: 1em; /*Tamaño de letra*/
+  font-weight: bold; /*Grosor de letra*/
+}
+
+/*Estilos para los botones (Botones) al pasar el cursor (Hover)*/
+.Botones .button:hover {
+  background-color: rgba(234, 239, 237, 0.719);
+  /*Aplicar color de fuente*/
+  color: #292929;
+  /*Darle un estilo al botón como si estiviera presionado*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+}
+
+/*Estilos del contenido de la página (párrafos)*/
+.Contenido {
+  text-align: justify; /*Alineación*/
+  vertical-align: top; /*Alineación vertical*/
+  justify-content: center; /*Justificar el contenido*/
+  margin: 0 auto; /*Centrar la imagen*/
+  padding: 0 20px; /*Relleno*/
+}
+
+.Contenido_ubicacion {
+  text-align: center; /*Alineación*/
+  vertical-align: top; /*Alineación vertical*/
+  justify-content: center; /*Justificar el contenido*/
+  margin: 0 auto; /*Centrar la imagen*/
+  padding: 0 20px; /*Relleno*/
+  font-size: 1em; /*Tamaño de letra*/
+}
+
+/*Estilos para las imagenes de la página de ubicación*/
+.ImagenesU figure {
+  display: block; /*Mostrar la imagen como un bloque*/
+  margin: 0 auto; /*Centrar la imagen*/
+  text-align: center; /*Alineación*/
+  justify-content: center; /*Justificar el contenido*/
+  padding: 1%;
+}
+
+/*Estilos para las imagenes de la página de ubicación*/
+.ImagenesU img {
+  border-radius: 50%; /*Borde redondeado*/
+  width: 200px; /*Ancho*/
+  height: 200px; /*Altura*/
+  border: 1px solid #3a3a3a; /*Borde*/
+  padding: 5px; /*Relleno*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Hovers de las imagenes de la página de ubicación*/
+.ImagenesU img:hover {
+  border-radius: 0%; /*Quitar bordes redondeados*/
+  transform: scale(1); /*Aumentar el tamaño de la imagen*/
+  transition: 0.5s; /*Tiempo de transición*/
+  width: 250px; /*Ancho*/
+  height: 250px; /*Altura*/
+  opacity: 0.5; /*Opacidad*/
+}
+
+/*Estilos del footer*/
+.Footer {
+  /*Centrar el footer*/
+  text-align: center;
+  /*Aumentar el tamaño de los párrafos y la fuente*/
+  font-size: 0.7em;
+  /*Colocarlo en la parte inferior de la página*/
+  position: absolute;
+  width: 100%;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar color de fuente*/
+  color: #ffffff;
+  background-color: #292929;
+}
+
+/*Estilos para las diferentes pantallas*/
+
+
+/*Estilos para el teléfono celular*/
+
+@media screen and (max-width: 800px) {
+  /*Estilos para el título*/
+  h1 {
+    font-size: 2em; /*Tamaño de letra*/
+  }
+
+  /*Estilos para el título secundario*/
+  h2 {
+    font-size: 0.5em; /*Tamaño de letra*/
+  }
+
+  /*Ocultar los botones de todas las páginas*/
+  .Botones {
+    display: none; /*Ocultar*/
+  }
+
+  /*Arreglar el degradado del Titulo*/
+  .Titulo {
+    background-image: linear-gradient(to bottom, rgba(95, 158, 160, 0.379), #f2f2f2);
+  }
+
+  /*Menú desplegable y aplicarle estilo*/
+  nav {
+    display: flex; /*Mostrar*/
+    background-color: rgb(119, 204, 207); /*Color de fondo*/
+    align-items: center; /*Alinear el menú desplegable al centro*/
+    border: 1px solid #3a3a3a; /*Borde*/
+    border-radius: 5%; /*Borde redondeado*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /*Alinear el menú desplegable al lado izquierdo y ubicarlo al lado izquierdo*/
+    position: fixed;
+    margin-left: -400px; /*Margen izquierdo (Negativa para esconder el menu)*/
+    margin-top: 0px; /*Margen superior*/
+    margin-bottom: 0; /*Margen inferior*/
+    z-index: 2; /*Posición en el eje z*/
+    width: 35%; /*Ancho*/
+    height: 100vh; /*Altura*/
+    transition: all 0.75s ease; /*Transición*/
+    overflow-y: hidden; /*Ocultar el contenido que no se ve*/
+  }
+	
+  /*Aplicar estilos a la lista del menú desplegable*/
+  nav a {
+    display: flex; /*Mostrar*/
+    color: #212121; /*Color de fuente*/
+    text-decoration: none; /*Quitar el subrayado*/
+    transition: all 0.75s ease; /*Transición*/
+    padding: 15px; /*Relleno*/
+    border-bottom: 1.5px solid #3a3a3a; /*Borde*/
+    border-radius: 5%; /*Borde redondeado*/
+  }
+
+  /*Quitar estilo de la lista del menú desplegable*/
+  nav ul {
+    list-style: none; /*Quitar estilo*/
+    padding: 0; /*Quitar relleno*/
+    margin-left: 1%; /*Margen*/
+    margin-right: 0%; /*Margen derecho*/
+    /*Centrar los elementos de la lista a la página*/
+  }
+
+  /*Aplicar estilos al hover de la lista*/
+  nav a:hover {
+    background-color: #f2f2f2; /*Color de fondo*/
+    opacity: 0.5; /*Opacidad*/
+    color: #3a3a3a;
+  }
+
+  /*Crear y mostrar el icono del menu desplegable*/
+  #menu-icon {
+    display: block; /*Mostrar*/
+    position: fixed; /*Posición fija*/
+    top: 0; /*Arriba*/
+    left: 0; /*Izquierda*/
+    width: 50px; /*Ancho*/
+    height: 50px; /*Altura*/
+    margin-left: 1%;
+    margin-top: 1%;
+    background-color: rgb(42, 42, 42); /*Color de fondo*/
+    border: 1px solid #3a3a3a; /*Borde*/
+    border-radius: 5%; /*Borde redondeado*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 2; /*Posición en el eje z*/
+    transition: all 0.75s ease; /*Transición*/
+  }
+
+  /*Crear las barras del icono del menú desplegable*/
+  #menu-icon span {
+    display: block; /*Mostrar*/
+    width: 40px; /*Ancho*/
+    height: 10px; /*Altura*/
+    margin: 5px auto; /*Margen*/
+    background-color: #f2f2f2; /*Color de fondo*/
+    border-radius: 10%; /*Borde redondeado*/
+  }
+
+  /*Aplicar estilo al hover del  icono del menu desplegable*/
+  #menu-icon:hover {
+    background-color: #f2f2f2; /*Color de fondo*/
+    opacity: 0.5; /*Opacidad*/
+    color: #3a3a3a;
+  }
+
+  /*Ocultar el input del menú desplegable*/
+  input[type="checkbox"] {
+    opacity: 0; /*Opacidad al 0 para que no se vea pero se pueda usar*/
+    width: 53px; /*Ancho*/
+    height: 53px; /*Altura*/
+    margin-left: 1%; /*Margen izquierdo*/
+    margin-top: 1%; /*Margen superior*/
+    /*Quitar el espacio que ocupa el input*/
+    position: fixed; /*Posición fija para que sea accesible en cualquier parte de la página*/
+    z-index: 10;
+    transition: all 0.75s ease; /*Transición*/
+
+  }
+
+  /*Mostrar el menú desplegable*/
+  input[type="checkbox"]:checked ~ nav {
+    margin-left: -2%; /*Margen izquierdo*/
+    z-index: 2; /*Posición en el eje z*/
+  }
+
+  /*Mostrar el icono del menú desplegable por encima de la nav bar cuando el input está seleccionado*/
+  input[type="checkbox"]:checked ~ #menu-icon {
+    z-index: 4; /*Posición en el eje z*/
+  }
+
+  /*Mostrar el checkbox por encima de la nav bar cuando el input está seleccionado*/
+  input[type="checkbox"]:checked ~ #menu-icon {
+    z-index: 6; /*Posición en el eje z*/
+  }
+
+  /*Aplicar estilo al hover del input del menú desplegable (cuando no está seleccionado)*/
+  input:hover[type="checkbox"] ~ #menu-icon {
+    opacity: 0.5; /*Opacidad*/
+    color: #3a3a3a;
+    transition: all 0.75s ease; /*Transición*/
+  }
+
+  /*Crear la animación del icono del menú desplegable (Se muestra una X cuando el input está seleccionado, la animación se hace con el span 1)*/
+  input[type="checkbox"]:checked ~ #menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(30%, 100%); /*Rotar 45 grados y trasladar 5px a la derecha y 5px hacia abajo*/
+    transition: all 0.75s ease; /*Transición*/
+  }
+
+  /*Crear la animación del icono del menú desplegable (Se muestra una X cuando el input está seleccionado, la animación se hace con el span 2)*/
+  input[type="checkbox"]:checked ~ #menu-icon span:nth-child(2) {
+    transform: rotate(-45deg) translate(0%, -10%); /*Rotar -45 grados y trasladar 5px a la derecha y 5px hacia arriba*/
+    transition: all 0.75s ease; /*Transición*/
+  }
+
+  /*Suavisar la animación del icono del menú desplegable (cuando el input no está seleccionado)*/
+  input[type="checkbox"]:not(:checked) ~ #menu-icon span:nth-child(1) {
+    transition: all 0.75s ease; /*Transición*/
+  }
+
+  /*Crear la animación del icono del menú desplegable (Se muestra una X cuando el input está seleccionado, la animación se hace con el span 3, en este caso se oculta el span)*/
+  input[type="checkbox"]:checked ~ #menu-icon span:nth-child(3) {
+    opacity: 0; /*Opacidad*/
+    transition: all 0.75s ease; /*Transición*/
+  }
+
+  
+  /*Ajustar el titulo*/
+  .Titulo {
+    text-align: center; /*Alineación*/
+    font-size: 7vw; /*Tamaño de letra*/
+    padding: 20px; /*Relleno*/
+  }
+
+  /*Estilos para la imagen de la página principal, centrarlas y darles un tamaño*/
+  .imagenes figure {
+    display: block; /*Mostrar la imagen como un bloque*/
+    margin: 0 auto; /*Centrar la imagen*/
+    text-align: center; /*Alineación*/
+    justify-content: center; /*Justificar el contenido*/
+  }
+
+  .imagenes img {
+    border-radius: 50%; /*Borde redondeado*/
+    width: 200px; /*Ancho*/
+    height: 200px; /*Altura*/
+    border: 1px solid #3a3a3a; /*Borde*/
+    padding: 5px; /*Relleno*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .Footer {
+  /*Centrar el footer*/
+  text-align: center;
+  /*Disminuir tamaño de los párrafos y la fuente*/
+  font-size: 0.6em;
+  /*Colocarlo en la parte inferior de la página*/
+  position: fixed; /*Posición*/
+  bottom: 0; /*Posición en el eje Y*/
+  width: 100%;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar color de fuente*/
+  color: #ffffff;
+  background-color: #292929;
+    }
+
+  
+}
+
+
+/*Estilos para la tablet (800 - 1200)*/
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  /*Estilos para el título*/
+  h1 {
+    font-size: 2em; /*Tamaño de letra*/
+  }
+
+  /*Estilos para el título secundario*/
+  h2 {
+    font-size: 0.5em; /*Tamaño de letra*/
+  }
+
+  /*Ajustar el titulo*/
+
+  .Titulo {
+    text-align: center;
+    font-size: 3vw;
+    padding: 20px;
+  }
+
+  /*Estilos para la imagen de la página principal, centrarlas y darles un tamaño*/
+  .imagenes figure {
+    display: inline-block; /*Mostrar la imagen como un bloque*/
+    text-align: center; /*Alineación*/
+    justify-content: center; /*Justificar el contenido*/
+    vertical-align: top; /*Alineación vertical*/
+    /*Centrar el bloque*/
+    margin: auto;
+    padding: 3%;
+  }
+
+  .imagenes img {
+    border-radius: 50%; /*Borde redondeado*/
+    width: 250px; /*Ancho*/
+    height: 250px; /*Altura*/
+    border: 1px solid #3a3a3a; /*Borde*/
+    padding: 5px; /*Relleno*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .imagenes {
+    text-align: center; /*Alineación*/
+    vertical-align: top; /*Alineación vertical*/
+    justify-content: center; /*Justificar el contenido*/
+  }
+
+  .Footer {
+  /*Centrar el footer*/
+  text-align: center;
+  /*Disminuir tamaño de los párrafos y la fuente*/
+  font-size: 0.6em;
+  /*Colocarlo en la parte inferior de la página*/
+  position: fixed; /*Posición*/
+  bottom: 0; /*Posición en el eje Y*/
+  width: 100%;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar color de fuente*/
+  color: #ffffff;
+  background-color: #292929;
+    }
+}
+
+
+/*Estilos para pantallas de escritorio (>1200)*/
+@media screen and (min-width: 1200px) {
+  /*Estilos para el título*/
+  h1 {
+    font-size: 2em; /*Tamaño de letra*/
+  }
+
+  /*Estilos para el título secundario*/
+  h2 {
+    font-size: 0.5em; /*Tamaño de letra*/
+  }
+
+  /*Estilos del body (Agrandar un poco la letra)*/
+  body {
+    font-size: 1.2em;
+  }
+  
+  /*Ajustar el titulo*/
+  .Titulo {
+    text-align: center;
+    font-size: 3vw;
+    padding: 20px;
+  }
+
+  /*Estilos para la imagen de la página principal, centrarlas y darles un tamaño*/
+  .imagenes figure {
+    display: inline-block; /*Mostrar la imagen como un bloque*/
+    text-align: center; /*Alineación*/
+    justify-content: cente1078r; /*Justificar el contenido*/
+    vertical-align: top; /*Alineación vertical*/
+    /*Centrar el bloque*/
+    margin: auto;
+    padding: 3%;
+  }
+
+  .imagenes img {
+    border-radius: 50%; /*Borde redondeado*/
+    width: 300px; /*Ancho*/
+    height: 300px; /*Altura*/
+    border: 1px solid #3a3a3a; /*Borde*/
+    padding: 5px; /*Relleno*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .imagenes {
+    text-align: center; /*Alineación*/
+    vertical-align: top; /*Alineación vertical*/
+    justify-content: center; /*Justificar el contenido*/
+  }
+
+  .Footer {
+  /*Centrar el footer*/
+  text-align: center;
+  /*Disminuir tamaño de los párrafos y la fuente*/
+  font-size: 0.6em;
+  /*Colocarlo en la parte inferior de la página*/
+  position: fixed; /*Posición*/
+  bottom: 0; /*Posición en el eje Y*/
+  width: 100%;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar color de fuente*/
+  color: #ffffff;
+  background-color: #292929;
+    }
+}

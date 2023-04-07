@@ -1,0 +1,530 @@
+/* estilos.css */
+
+/*Quitar el pequeño borde del body*/
+body {
+  margin: 0;
+}
+
+/*Estilos del header*/
+/* Estilos del título de la página principal */
+
+/*Centrar el título de la página y aplicarle más estilos*/
+.Titulo {
+  /*Alinear el texto al centro*/
+  text-align: center;
+  /*Aumentar el tamaño de la fuente*/
+  font-size: 2em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Roboto', sans-serif;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Aplicar estilos al Título principal*/
+h1 {
+  /*Alinear el texto al centro*/
+  text-align: center;
+  /*Aumentar el tamaño de la fuente*/
+  font-size: 2em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Aplicar estilos al Título secundario (slogan)*/
+h2 {
+  /*Alinear el texto al centro*/
+  text-align: center;
+  /*Aumentar el tamaño de la fuente*/
+  font-size: 0.8em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplical estilo cursiva*/
+  font-style: italic;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Crear un fondo para el título con un color y un degradado*/
+.Titulo {
+  /*Aplicar color de fondo*/
+  background-color: rgba(95, 158, 160, 0.379);
+  /*Extender el fondo hasta el borde de la página*/
+  padding: 20px;
+}
+
+/* Estilos de las imagenes pág principal */
+
+/*Centrar las imagenes y mostrarlas en línea*/
+.imagenes figure {
+  /*Desplegar las imagenes en una sola fila*/
+  display: inline-block;
+  /*Definir el ancho del bloque*/
+  width: 250px;
+  /*Centrar las imagenes hacia arriba*/
+  vertical-align: middle;
+  /*Centrar el bloque de imagenes a la página*/
+  text-align: center;
+  justify-content: center;
+  
+}
+
+/*Ajustar el tamaño de las imagenes y hacerlas circulares*/
+.imagenes img {
+  /*Hacer la imagen circular*/
+  border-radius: 50%;
+  /*Ajustar el tamaño de la imagen*/
+  width: 200px;
+  height: 200px;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Agregar pad al borde*/
+  padding: 10px;
+  /*Agregar sombra a las imagenes*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Estilos del frame de los botones*/
+.Botones {
+  /*Centrar los botones*/
+  text-align: center;
+  /*Alinear los botones hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de botones a la página*/
+  justify-content: center;
+  /*Aumentar el tamaño de los botones y la fuente*/
+  font-size: 1em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aumentar el tamaño de los botones*/
+  padding: 10px 20px;
+  background-image: linear-gradient(to bottom, rgba(95, 158, 160, 0.379), #ffffff);
+}
+
+/*Estilos de los botones*/
+.Botones .button {
+  /*Alinear los botones hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de botones a la página*/
+  justify-content: center;
+  /*Aumentar el tamaño de los botones y la fuente*/
+  font-size: 1em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aumentar el tamaño de los botones*/
+  padding: 10px 20px;
+  /*Quitar el borde de los botones*/
+  border: 0px;
+  /*Redondear los bordes de los botones*/
+  border-radius: 10px;
+  /*Aplicar color de fondo*/
+  background-color: rgba(141, 244, 196, 0.519);
+  /*Darle un estilo al botón como si estiviera levantado*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /*Aplicar color de fuente*/
+  color: #292929;
+}
+
+/*Hoover de los botones*/
+.Botones .button:hover {
+  /*Aplicar color de fondo*/
+  background-color: rgba(234, 239, 237, 0.719);
+  /*Aplicar color de fuente*/
+  color: #292929;
+  /*Darle un estilo al botón como si estiviera presionado*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+}
+
+/*Estilos del contenido de la página (Párrafos)*/
+.Contenido {
+  /*Centrar el contenido*/
+  text-align: center;
+  /*Alinear el contenido hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Aumentar el tamaño de los párrafos y la fuente*/
+  font-size: 1em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+  /*Agregar pad al borde para que no se pegue al borde de la página*/
+  padding: 10px;
+}
+
+/*Centrar el caption de cada imagen*/
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/*Estilos del footer*/
+.Footer {
+  /*Centrar el footer*/
+  text-align: center;
+  /*Aumentar el tamaño de los párrafos y la fuente*/
+  font-size: 0.8em;
+  /*Colocarlo en la parte inferior de la página*/
+  position: absolute;
+  width: 100%;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar color de fuente*/
+  color: #ffffff;
+  background-color: #292929;
+}
+
+/*Agrandar imagenes*/
+.imagenes img:hover {
+  /*Transformar la imagen otra vez a su forma original (cuadrada), animar la transición*/
+  border-radius: 0%;
+  transform: scale(1);
+  transition: 0.5s;
+  /*Aumentar el tamaño de la imagen*/
+  width: 250px;
+  height: 250px;
+}
+
+/*Estilos de la página de ubicación*/
+
+/*Estilo del texto*/
+.Contenido_ubicacion {
+  /*Centrar el contenido*/
+  text-align: center;
+  /*Alinear el contenido hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+  /*Aumentar el tamaño de los párrafos y la fuente*/
+  font-size: 1em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Crear un bloque para las imagenes*/
+.ImagenesU figure{
+  display: inline-block;
+  /*Centrar las imagenes hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de imagenes a la página*/
+  text-align: center;
+  /*Centrar horizontalmente el bloque de imagenes*/
+  margin: 0 auto; 
+  width: 650px;
+  /*Separar un poco las imagenes de los botones*/
+  padding: 10px;
+}
+
+/*Ajustar el tamaño de las imagenes y redondearlas*/
+.ImagenesU img {
+  /*Hacer la imagen circular*/
+  border-radius: 50%;
+  /*Ajustar el tamaño de la imagen*/
+  width: 300px;
+  height: 300px;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Agregar pad al borde*/
+  padding: 10px;
+  /*Agregar sombra a las imagenes*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Hovers de las imagenes*/
+.ImagenesU img:hover {
+  /*Transformar la imagen otra vez a su forma original (cuadrada), animar la transición*/
+  border-radius: 0%;
+  transform: scale(1);
+  transition: 0.5s;
+  /*Aumentar el tamaño de la imagen*/
+  width: 450px;
+  height: 450px;
+  /*Aplicar opacidad*/
+  opacity: 0.5;
+}
+
+/*Estilos de la página de personajes*/
+
+.Contenido_personajes {
+  /*Centrar el contenido*/
+  text-align: center;
+  /*Alinear el contenido hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+  /*Aumentar el tamaño de los párrafos y la fuente*/
+  font-size: 1em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Aplicar estilo a la tabla de personajes*/
+.Tabla_personajes {
+  /*Alinear el contenido hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Estilo del texto de la página de personajes*/
+.Tabla_personajes p {
+  /*Justificar el texto*/
+  text-align: justify;
+  /*Alinear el contenido en el centro*/
+  vertical-align: center;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Agregar pad al borde*/
+  padding: 10px;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar negrita*/
+  font-weight: bold;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Estilo de las imagenes de la tabla de personajes*/
+.Tabla_personajes img {
+  /*Hacer la imagen circular*/
+  border-radius: 50%;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Agregar pad al borde*/
+  padding: 10px;
+  /*Agregar sombra a las imagenes*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /*Ajustar el tamaño de la imagen*/
+  width: 300px;
+  height: 300px;
+}
+
+/*Estilo del hover de las imagenes de la tabla de personajes*/
+.Tabla_personajes img:hover {
+  /*Transformar la imagen otra vez a su forma original (cuadrada), animar la transición*/
+  border-radius: 0%;
+  transform: scale(1);
+  transition: 0.5s;
+  /*Aumentar el tamaño de la imagen*/
+  width: 350px;
+  height: 350px;
+}
+
+/*Estilos de la página de actividades*/
+
+.Contenido_actividades {
+  /*Centrar el contenido*/
+  text-align: center;
+  /*Alinear el contenido hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+  /*Aumentar el tamaño de los párrafos y la fuente*/
+  font-size: 1em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Estilo de la tabla de actividades*/
+.Tabla_actividades {
+  /*Alinear el contenido hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Estilo del texto de la página de actividades*/
+.Tabla_actividades p {
+  /*Justificar el texto*/
+  text-align: justify;
+  /*Alinear el contenido en el centro*/
+  vertical-align: center;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Agregar pad al borde*/
+  padding: 10px;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar negrita*/
+  font-weight: bold;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Estilo de las imagenes de la tabla de actividades*/
+.Tabla_actividades img {
+  /*Centrar la imagen dentro de la tabla*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Agregar pad al borde*/
+  padding: 10px;
+  /*Hacer la imagen circular*/
+  border-radius: 50%;
+  /*Ajustar el tamaño de la imagen*/
+  width: 300px;
+  height: 300px;
+  /*Agregar sombra a las imagenes*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Estilo del hover de las imagenes de la tabla de actividades*/
+.Tabla_actividades img:hover {
+  /*Transformar la imagen otra vez a su forma original (cuadrada), animar la transición*/
+  border-radius: 0%;
+  transform: scale(1);
+  transition: 0.5s;
+  /*Aumentar el tamaño de la imagen*/
+  width: 350px;
+  height: 350px;
+}
+
+/*Estilos del contenido de la página historia (Párrafos)*/
+.ContenidoH {
+  /*Centrar el contenido*/
+  text-align: center;
+  /*Alinear el contenido hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Aumentar el tamaño de los párrafos y la fuente*/
+  font-size: 1em;
+  /*Aplicar estilo negrita*/
+  font-weight: bold;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+  /*Agregar pad al borde para que no se pegue al borde de la página*/
+  padding: 10px;
+}
+
+/*Estilos de la tabla de la página historia*/
+/*Estilo de la tabla de actividades*/
+.Tabla_historia {
+  /*Alinear el contenido hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Estilo del texto de la página de actividades*/
+.Tabla_historia p {
+  /*Justificar el texto*/
+  text-align: justify;
+  /*Alinear el contenido en el centro*/
+  vertical-align: center;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Agregar pad al borde*/
+  padding: 10px;
+  /*Aplicar familia de fuentes*/
+  font-family: 'Futura', sans-serif;
+  /*Aplicar negrita*/
+  font-weight: bold;
+  /*Aplicar color de fuente*/
+  color: #3a3a3a;
+}
+
+/*Estilo de las imagenes de la tabla de actividades*/
+.Tabla_historia img {
+  /*Centrar la imagen dentro de la tabla*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Agregar pad al borde*/
+  padding: 10px;
+  /*Hacer la imagen circular*/
+  border-radius: 50%;
+  /*Ajustar el tamaño de la imagen*/
+  width: 300px;
+  height: 300px;
+  /*Agregar sombra a las imagenes*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Estilo del hover de las imagenes de la tabla de actividades*/
+.Tabla_historia img:hover {
+  /*Transformar la imagen otra vez a su forma original (cuadrada), animar la transición*/
+  border-radius: 0%;
+  transform: scale(1);
+  transition: 0.5s;
+  /*Aumentar el tamaño de la imagen*/
+  width: 350px;
+  height: 350px;
+}
+
+/*Establecer estilos para diferentes pantallas para que se adapte a cualquier dispositivo (teléfono celular (<800), tableta o portátil sencillo (800 - 1200) y pantallas de escritorio (>1200))*/
+@media screen and (max-width: 800px) { /*Estilos para teléfonos celulares*/
+  /*Crear un menú desplegable para el menú de navegación*/
+  .Menu {
+      /*Ocultar el menú de navegación cuando no es necesario*/
+      display: none;
+  }
+  /*Estilo del menú desplegable, blur cuando se despliega y animar su despliegue*/
+  
+}
