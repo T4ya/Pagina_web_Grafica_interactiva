@@ -548,7 +548,7 @@ table img:hover {
   /*Disminuir tamaño de los párrafos y la fuente*/
   font-size: 0.7em;
   /*Colocarlo en la parte inferior de la página*/
-  position: absolute; /*Posición*/
+  position: fixed; /*Posición*/
   bottom: 0; /*Posición en el eje Y*/
   width: 100%;
   /*Aplicar estilo negrita*/
