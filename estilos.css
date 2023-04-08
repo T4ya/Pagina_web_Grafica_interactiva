@@ -301,6 +301,21 @@ table img:hover {
   opacity: 0.5; /*Opacidad*/
 }
 
+/*Aplicar estilos a la imagen del mapa de navegación*/
+.MapaNavegacion {
+  text-align: center; /*Alineación*/
+  vertical-align: top; /*Alineación vertical*/
+  justify-content: center; /*Justificar el contenido*/
+  margin: 0 auto; /*Centrar la imagen*/
+  padding: 0 20px; /*Relleno*/
+}
+
+/*Aplicar estilos al hover de la imagen del mapa de navegación*/
+.MapaNavegacion:hover {
+  transition: 0.5s; /*Tiempo de transición*/
+  opacity: 0.5; /*Opacidad*/
+}
+
 /*Estilos del footer*/
 .Footer {
   /*Centrar el footer*/
