@@ -10,10 +10,37 @@
   <!-- Título de la página -->
 	<title>Las grandiosas Cataratas del Niagara</title>
   <!-- Estilos de la página (Referencia al archivo css de estilos para la página) -->
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css"> <!-- Referencia al archivo css de estilos para la página -->
+  <!-- Importar iconos de Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <!-- Referencia a los iconos de Font Awesome (Se usa más que todo para no crear iconos muy complejos con spans)-->
 </head>
 <!-- Cuerpo de la página -->
 <body>
+  <!-- Vinculo para volver al tope de la página -->
+  <div id="top"></div>
+
+  <input type="checkbox" id="menu-desplegable" class="menu-desplegable-check"> <!-- Crear checkbox para menú desplegable -->
+
+  <!-- Crear icono del menú desplegable para pantallas pequeñas -->
+  <a id="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
+  <!-- Crear menú desplegable para pantallas pequeñas -->
+  <nav id="menu-desplegable">
+    <ul>
+      <li><a href="Ubicacion.html">Ubicación</a><br></li>
+      <li><a href="Personajes que lo habitan.html">Personajes que lo habitan</a><br></li>
+      <li><a href="Actividades.html">Actividades</a><br></li>
+      <li><a href="Historia.html">Historia</a><br></li>
+      <li><a href="Referencias.html">Referencias</a><br></li>
+      <li><a href="Index.html">Pág. Principal</a><br></li><!-- Crear flecha para volver al tope de la página -->
+      <a href="#top" class="top"><i class="fas fa-arrow-up"></i></a>
+    </ul>
+  </nav>
+
   <!-- Top de la página (Título contenido en un frame) -->
   <div class="Titulo">
     <header class="Titulo1">
@@ -34,27 +61,6 @@
       <button class="button" onclick="window.location.href='Index.html'">Pág. Principal</button>
     </div>
   </section>
-  
-  <section>
-    <div class="imagenes">
-      <figure>
-        <img src="imgs/Niagara falls 1.jpg" alt="Niagara1" width="250" height="200">
-        <figcaption>Vista aérea de las Cataratas del Niagara</figcaption>
-      </figure>
-      <figure>
-        <img src="imgs/Niagara falls 2.jpg" alt="Niagara2" width="250" height="200">
-        <figcaption>Vista senital de las Cataratas del Niagara</figcaption>
-      </figure>
-      <figure>
-        <img src="imgs/Niagara falls 3.jpg" alt="Niagara3" width="250" height="200">
-        <figcaption>Turismo por bote</figcaption>
-      </figure>
-      <figure>
-        <img src="imgs/Niagara falls 4.jpg" alt="Niagara4" width="250" height="200">
-        <figcaption>Puesto de turismo</figcaption>
-      </figure>
-    </div>
-  </section>
     <div class="ContenidoH">
       <p>Como se mencionó en la página principal las Cataratas del Niagara son un conjunto de cascadas que conforman un hermoso paisaje digno de admirar, es por eso que se han convertido en uno de los sitios más visitados tanto de Estados Unidos como de Canadá. Las cataratas del Niágara son un fenómeno natural impresionante que se encuentra en la frontera entre Canadá y Estados Unidos. Las cataratas se originaron hace unos 10.000 años durante la última glaciación continental, cuando un gran glaciar avanzó hacia el este de Canadá y moldeó la región de los Grandes Lagos y el río Niágara. Como resultado, el río se desplomó desde una altura de más de 50 metros en una garganta profunda, creando las impresionantes cataratas que se pueden ver hoy en día.<br><br>Las cataratas del Niágara han sido un punto de referencia importante en la historia de América del Norte desde la época precolombina, y han atraído a visitantes y exploradores durante siglos. En la década de 1800, la región se convirtió en un destino turístico popular, y se construyeron hoteles, casinos y atracciones para atender a los visitantes.<br><br>Hoy en día, las cataratas del Niágara siguen siendo una atracción turística mundialmente conocida, y se estima que más de 30 millones de personas visitan la región cada año. La vista panorámica de las cataratas es impresionante, pero también hay muchas otras actividades para hacer en la zona, como un paseo en bote en las cataratas, un recorrido detrás de las cataratas, y una variedad de atracciones y entretenimiento en los pueblos cercanos. Las cataratas del Niágara son un testimonio impresionante de la historia geológica de América del Norte y continúan siendo un destino turístico popular para visitantes de todo el mundo.</p>
     </div>
@@ -69,17 +75,47 @@
                 </td>
                 <td>
                     <!-- Imagen de Annie Taylor -->
-                    <figure>
-                        <img src="imgs/AnnieTaylor.jpg" alt="Annie Taylor" width="350" height="400">
-                        <figcaption>Annie Taylor junto al barril donde se lanzó</figcaption>
+                    <figure><a href="https://www.wbfo.org/heritage-moments/2018-10-22/heritage-moments-annie-edson-taylor-falls-daredevil-and-a-widows-hard-choices">
+                        <img src="imgs/AnnieTaylor.jpg" alt="Annie Taylor" width="350" height="400"></a>
+                        <figcaption><span style="color: rgb(0, 110, 255)"><b>Annie Taylor junto al barril donde se lanzó</b></span></figcaption>
                     </figure>
                 </td>
+            </tr>
+            <tr>
+              <td>
+                <!-- Imagen de la bandera de Canadá -->
+                <figure>
+                  <img src="imgs/Canadaflag.jpg" alt="BAndera de Canada" width="350" height="400">
+                  <figcaption><span style="color: rgb(0, 110, 255)"><b>Bandera de Canadá</b></span></figcaption>
+                </figure>
+              </td>
+              <td>
+                <!-- Historia corta sobre Canada-->
+                <p>
+                  Canadá, cuyo nombre proviene de una palabra indígena que significa "pueblo", tiene una rica historia de exploración y colonización por parte de franceses y británicos, en la que las personas indígenas también jugaron un papel importante. Después de alcanzar la autonomía en 1931, la bandera nacional de Canadá, con su emblemático diseño de hoja de arce, fue izada por primera vez en 1965, simbolizando la unidad y diversidad del país.<br>Además de su rica historia, Canadá es un importante productor mundial de minerales, con Ontario destacándose en la producción de cobre, níquel y plata, mientras que Alberta y Saskatchewan tienen grandes reservas de petróleo y gas natural. Con casi el 50 % de la superficie terrestre de Canadá cubierta por bosques, la madera también es un negocio importante, lo que refleja la riqueza y diversidad de los recursos naturales del país.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <!-- Historia corta sobre Estados Unidos-->
+                <p>
+                  Estados Unidos es uno de los países más diversos geográficamente del mundo, desde las montañas Rocosas hasta las llanuras del medio oeste y las playas de la costa este y oeste. Además, es la primera economía del mundo por PIB nominal y cuenta con una gran variedad de industrias, desde la tecnología en California hasta la producción de petróleo en Texas.<br>La cultura estadounidense es una mezcla de influencias de todo el mundo, resultado de su historia de inmigración y diversidad étnica. A lo largo del tiempo, ha producido algunas de las obras de arte y música más influyentes del mundo, desde el jazz de Nueva Orleans hasta el cine de Hollywood y la literatura de Nueva York. La nación también ha liderado el camino en la investigación científica y la tecnología, con algunos de los avances más importantes en la historia de la humanidad, como la creación de internet.
+                </p>
+              </td>
+              <td>
+                <!-- Imagen de la bandera de Estados Unidos -->
+                <figure>
+                  <img src="imgs/USflag.jpg" alt="Bandera de Estados Unidos" width="350" height="400">
+                  <figcaption><span style="color: rgb(0, 110, 255)"><b>Bandera de Estados Unidos</b></span></figcaption>
+                </figure>
+              </td>
             </tr>
         </table>
     </section>
 
 	<footer class="Footer">
-		<p>Creado por: Jeferson Yesid Gonzalez Ortiz | Cod: 319019 | jegonzalezor@unal.edu.co | Curso: Gráfica Interactiva | Derechos reservados &copy; 2023</p>
+		<p>Creado por: Jeferson Yesid Gonzalez Ortiz | Cod: 319019 | jegonzalezor@unal.edu.co | Curso: Gráfica Interactiva | Universidad Nacional de Colombia sede Palmira | Derechos reservados &copy; 2023</p>
 	</footer>
 </body>
 </html>

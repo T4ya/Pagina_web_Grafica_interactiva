@@ -9,13 +9,37 @@ body {
   color: #000000; /*Color de letra*/
   margin: 0; /*Margen*/
   padding: 0; /*Relleno*/
-  padding-bottom: 20%;
+  padding-bottom: 15%;
   text-align: justify; /*Alineación*/
 }
 
 /*Ocultar el menu de navegación*/
 nav {
   display: none;
+}
+
+/*Estilos para los separadores*/
+hr {
+  border: 0; /*Borde*/
+  height: 1px; /*Altura*/
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); /*Color de fondo genera un gradiente para que la línea se vea más fina y no tan gruesa*/
+}
+
+/*Dar estilos a las notas*/
+.NOTA {
+  font-size: 0.8em; /*Tamaño de letra*/
+  font-weight: bold; /*Grosor de letra*/
+  color: #3a3a3a; /*Color de fuente*/
+  background-color: #f2f2f2; /*Color de fondo*/
+  padding: 1%; /*Relleno*/
+  border-radius: 5px; /*Borde redondeado*/
+  font-style: italic;
+}
+
+/*Dar estilos a los textos de la página (Textos fuera de caprions o bloques)*/
+.Texto {
+  text-align: justify; /*Alineación*/
+  padding: 2%; /*Relleno*/
 }
 
 /*Aplicar estilos a la flecha para al tope de la página*/
@@ -50,12 +74,20 @@ nav {
   padding: 0 20px;
 }
 
+/*Centrar el titulo de la ubicación y aplicarle más estilos*/
+.TitulosU {
+  text-align: center; /*Alinear el texto dentro de la página*/
+  font-size: 3em; /*Tamaño de letra*/
+  font-weight: bold; /*Grosor de letra*/
+  color: #3a3a3a; /*Color de fuente*/
+}
+
 /*Estilos para el título*/
 h1 {
   font-size: 2em; /*Tamaño de letra*/
   font-weight: 700; /*Grosor de letra*/
   margin: 0; /*Margen*/
-  padding: 0; /*Relleno*/
+  padding: 2%; /*Relleno*/
   text-align: center; /*Alineación*/
   /*Aplicar color de fuente*/
   color: #3a3a3a;
@@ -69,22 +101,99 @@ h2 {
   padding: 0; /*Relleno*/
   text-align: center; /*Alineación*/
   /*Aplicar color de fuente*/
-  color: #3a3a3a;
-  padding: 2%;
+  color: #3a3a3a; /*Color de fuente*/
+  padding: 2%; /*Relleno*/
 }
 
 /*Estilos para las secciones*/
 section {
-  padding-bottom: 2%;
+  padding-bottom: 2%; /*Relleno*/
 }
 
 /*Estilos para el caption de cada imagen*/
 figcaption {
-  text-align: center;
-  font-size: 0.9em;
-  font-style: italic;
-  padding: 2%;
+  text-align: center; /*Alineación*/
+  font-size: 0.9em; /*Tamaño de letra*/
+  font-style: italic; /*Estilo de letra*/
+  padding: 2%;  /*Relleno*/
 }
+
+/*Estilos para los párrafos*/
+p {
+  font-size: 0.9em;
+  padding: 1%;
+  /*Justificar el texto*/
+  text-align: justify;
+  /*Alinear el contenido en el centro*/
+  vertical-align: center;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Redondear el borde de la caja*/
+  border-radius: 10px;
+  /*Agregar pad al borde*/
+  padding: 1%;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+}
+
+/*Aplicar estilo a las tablas*/
+table {
+  /*Alinear el contenido hacia arriba*/
+  vertical-align: top;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 20px; /*Margen*/
+  text-align: center; /*Alinear el texto al centro*/
+}
+
+/*Estilo del texto de las tablas*/
+table p {
+  /*Justificar el texto*/
+  text-align: justify;
+  /*Alinear el contenido en el centro*/
+  vertical-align: center;
+  /*Centrar el bloque de contenido a la página*/
+  justify-content: center;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Redondear el borde de la caja*/
+  border-radius: 10px;
+  /*Agregar pad al borde*/
+  padding: 2%;
+  /*Ponerle una margen al texto para que no se pegue a los bordes*/
+  margin: 0 10px;
+}
+
+/*Estilo de las imagenes de las tablas*/
+table img {
+  /*Hacer la imagen circular*/
+  border-radius: 50%;
+  /*Colocar bordes a las imagenes*/
+  border: 1px solid #3a3a3a;
+  /*Agregar pad al borde*/
+  padding: 10px;
+  /*Agregar sombra a las imagenes*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /*Ajustar el tamaño de la imagen*/
+  width: 300px;
+  height: 300px;
+}
+
+/*Estilo del hover de las imagenes de las tablas*/
+table img:hover {
+  /*Transformar la imagen otra vez a su forma original (cuadrada), animar la transición*/
+  border-radius: 0%; /*Quitar bordes redondeados*/
+  transform: scale(1); /*Aumentar el tamaño de la imagen*/
+  transition: 0.5s; /*Tiempo de transición*/
+  /*Aumentar el tamaño de la imagen*/
+  width: 350px; /*Ancho*/
+  height: 350px; /*Altura*/
+  opacity: 0.5; /*Opacidad*/
+}
+
 
 /*Estilos para la imagen de la página principal, centrarlas y darles un tamaño*/
 .imagenes figure {
@@ -192,6 +301,8 @@ figcaption {
   opacity: 0.5; /*Opacidad*/
 }
 
+
+
 /*Estilos del footer*/
 .Footer {
   /*Centrar el footer*/
@@ -222,6 +333,13 @@ figcaption {
   /*Estilos para el título secundario*/
   h2 {
     font-size: 0.5em; /*Tamaño de letra*/
+  }
+
+  td {
+    justify-content: center; /*Centrar el contenido*/
+    display:  block; /*Mostrar*/
+    width: 100%; /*Ancho*/
+    transition: all 0.7s ease; /*Tiempo de transición*/
   }
 
   /*Ocultar los botones de todas las páginas*/
@@ -401,6 +519,11 @@ figcaption {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
+  .Tabla_ubicaciones img {
+    width: 200px; /*Ancho*/
+    height: 200px; /*Altura*/
+  }
+
   .Footer {
   /*Centrar el footer*/
   text-align: center;
@@ -433,8 +556,12 @@ figcaption {
     font-size: 0.5em; /*Tamaño de letra*/
   }
 
+  /*Esconder el checkbox*/
+  input[type="checkbox"] {
+    display: none; /*No mostrar el input*/
+  }
+  
   /*Ajustar el titulo*/
-
   .Titulo {
     text-align: center;
     font-size: 3vw;
@@ -466,7 +593,7 @@ figcaption {
     vertical-align: top; /*Alineación vertical*/
     justify-content: center; /*Justificar el contenido*/
   }
-
+  
   .Footer {
   /*Centrar el footer*/
   text-align: center;
@@ -500,6 +627,11 @@ figcaption {
   /*Estilos del body (Agrandar un poco la letra)*/
   body {
     font-size: 1.2em;
+  }
+
+  /*Esconder el checkbox*/
+  input[type="checkbox"] {
+    display: none; /*No mostrar el input*/
   }
   
   /*Ajustar el titulo*/

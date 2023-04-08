@@ -10,10 +10,36 @@
   <!-- Título de la página -->
 	<title>Las grandiosas Cataratas del Niagara</title>
   <!-- Estilos de la página (Referencia al archivo css de estilos para la página) -->
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css"> <!-- Referencia al archivo css de estilos para la página -->
+    <!-- Importar iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <!-- Referencia a los iconos de Font Awesome (Se usa más que todo para no crear iconos muy complejos con spans)-->
 </head>
     <!-- Cuerpo de la página -->
     <body>
+        <!-- Vinculo para volver al tope de la página -->
+    <div id="top"></div>
+
+    <input type="checkbox" id="menu-desplegable" class="menu-desplegable-check"> <!-- Crear checkbox para menú desplegable -->
+
+    <!-- Crear icono del menú desplegable para pantallas pequeñas -->
+    <a id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <!-- Crear menú desplegable para pantallas pequeñas -->
+    <nav id="menu-desplegable">
+        <ul>
+        <li><a href="Ubicacion.html">Ubicación</a><br></li>
+        <li><a href="Personajes que lo habitan.html">Personajes que lo habitan</a><br></li>
+        <li><a href="Actividades.html">Actividades</a><br></li>
+        <li><a href="Historia.html">Historia</a><br></li>
+        <li><a href="Referencias.html">Referencias</a><br></li>
+        <li><a href="Index.html">Pág. Principal</a><br></li><!-- Crear flecha para volver al tope de la página -->
+        <a href="#top" class="top"><i class="fas fa-arrow-up"></i></a>
+        </ul>
+    </nav>
     <!-- Top de la página (Título contenido en un frame) -->
     <div class="Titulo">
         <header class="Titulo1">
@@ -36,8 +62,10 @@
     </section>
     <section>
         <div class="ContenidoR">
-            <h1>Referencias</h1>
-            <!-- Lista de referencias -->
+            <!-- Lista de referencias (Imagenes) -->
+            <hr>
+            <h1><span style="color: rgb(0, 110, 255)"><b>Imagenes:</b></span></h1>
+            <hr>
             <ul>
                 <li><a href="https://unsplash.com/photos/mNs_6VmbaiA">IMG: Vista aérea de las Cataratas del Niagara. </a></li>
                 <li><a href="https://unsplash.com/photos/Gcc3c6MfSM0">IMG: Vista senital de las Cataratas del Niagara. </a></li>
@@ -49,18 +77,39 @@
                 <li><a href="https://unsplash.com/photos/v_e3Hha4EBA">IMG: Imagen representativa de la población americana </a></li>
                 <li><a href="https://unsplash.com/photos/7mV1wl8RmMM">IMG: Bajada por tirolesa en las Cataratas del Niagara. </a></li>
                 <li><a href="https://unsplash.com/photos/1C93fRnID0g">IMG: Paseo por bote en las Cataratas del Niagara. </a></li>
+                <li><a href="https://www.skylon.com/">IMG: Torre Skylon. </a></li>
+                <li><a href="https://unsplash.com/es/fotos/ZPVisr0s_hQ">IMG: Bandera de los Estados Unidos. </a></li>
+                <li><a href="https://unsplash.com/es/fotos/HWtFbzNzSA4">IMG: Bandera de Estados Unidos. </a></li>
+                <hr>
+                <h1><span style="color: rgb(0, 110, 255)"><b>Referencias:</b></span></h1>
+                <hr>
                 <li><a href="https://www.niagarafallstourism.com/play/falls-experiences/niagara-helicopters/">IMG & REF: Paseo por helicoptero en las Cataratas del Niagara. </a></li>
                 <li><a href="https://rove.me/to/niagara-falls/journey-behind-the-falls">IMG & REF: Entrada a la parte de atrás de las Cataratas del Niagara. </a></li>
                 <li><a href="https://www.wbfo.org/heritage-moments/2018-10-22/heritage-moments-annie-edson-taylor-falls-daredevil-and-a-widows-hard-choices">IMG & REF: Annie Taylor y su hazaña en las Cataratas del Niagara. </a></li>
                 <li><a href="https://unsplash.com/photos/9qzyfPcBZGw">IMG: Vista aérea de las Cataratas del Niagara. </a></li>
                 <li><a href="https://www.niagarafallstourism.com/">REF: Referencia general sobre las actividades de las que se puede participar en las Cataratas el Niagara. </a></li>
                 <li><a href="https://es.wikipedia.org/wiki/Cataratas_del_Ni%C3%A1gara">REF: Referencia general de las Cataratas del Niagara. </a></li>
+                <li><a href="https://www.getyourguide.com/cataratas-del-niagara-l283/12-min-en-helicoptero-sobre-las-cataratas-del-niagara-t157179/?partner_id=C46C5&mkt_cmp=true&visitor-id=9TQH0BI59NNSP42OIYO4OPU7EURMBVIG&locale_autoredirect_optout=true">REF: Referencia sobre el paseo en helicoptero en las Cataratas. </a></li>
+                <li><a href="https://www.getyourguide.com/cataratas-del-niagara-l283/12-min-en-helicoptero-sobre-las-cataratas-del-niagara-t157179/?partner_id=C46C5&mkt_cmp=true&visitor-id=9TQH0BI59NNSP42OIYO4OPU7EURMBVIG&locale_autoredirect_optout=true">REF: Referencia sobre los puntos de turismo de las Cataratas. </a></li>
+                <li><a href="https://www.getyourguide.com/niagara-falls-canadian-side-l283/1-hour-imax-adventure-in-niagara-falls-ny-t16572/">REF: Referencia sobre los tour caminando en las Cataratas. </a></li>
+                <li><a href="https://www.getyourguide.com/toronto-l177/from-toronto-niagara-falls-day-tour-t68302/">REF: Referencia sobre el paseo en bote en las Cataratas. </a></li>
+                <li><a href="https://www.getyourguide.com/niagara-falls-ontario-l87891/niagara-falls-walking-tour-journey-behind-the-falls-entry-t452803/">REF: Referencia sobre la caminata detrás de las Cataratas. </a></li>
+                <li><a href="https://www.skylonreservations.com/">REF: Reservaviones Torre Skylon. </a></li>
+                <li><a href="https://www.niagarafallsstatepark.com/niagara-falls-state-park">IMG & REF: Reservaviones Niagara Falls State Park. </a></li>
+                <li><a href="https://media.canada.travel/es-MX/resources/canada-in-brief">REF: Demografía y datos interesantes de Canadá.</a></li>
+                <li><a href="https://www.pewresearch.org/social-trends/fact-sheet/facts-about-the-us-black-population/">REF: Demografía de Estados Unidos </a></li>
+                <li><a href="https://www.mapquest.com/travel/interesting-facts-about-the-united-states/">REF: Datos interesantes de Estados Unidos </a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Historia_de_los_Estados_Unidos">REF Historia de los Estados Unidos. </a></li>
+                <li><a href="https://www.canada.ca/en/environment-climate-change/services/great-lakes-protection/canada-united-states-water-quality-agreement/overview.html">REF: Referencia de datos interesantes de Canadá. </a></li>
             </ul>
         </div>
     </section>
 
+    <!-- Crear flecha para volver al tope de la página -->
+    <a href="#top" class="top"><i class="fas fa-arrow-up"></i></a>
+
 	<footer class="Footer">
-		<p>Creado por: Jeferson Yesid Gonzalez Ortiz | Cod: 319019 | jegonzalezor@unal.edu.co | Curso: Gráfica Interactiva | Derechos reservados &copy; 2023</p>
+		<p>Creado por: Jeferson Yesid Gonzalez Ortiz | Cod: 319019 | jegonzalezor@unal.edu.co | Curso: Gráfica Interactiva | Universidad Nacional de Colombia sede Palmira | Derechos reservados &copy; 2023</p>
 	</footer>
 </body>
 </html>
