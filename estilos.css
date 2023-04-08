@@ -301,8 +301,6 @@ table img:hover {
   opacity: 0.5; /*Opacidad*/
 }
 
-
-
 /*Estilos del footer*/
 .Footer {
   /*Centrar el footer*/
@@ -317,6 +315,11 @@ table img:hover {
   /*Aplicar color de fuente*/
   color: #ffffff;
   background-color: #292929;
+}
+
+.Footer p {
+  /*Anular la justificacion del texto del footer*/
+  text-align: center;
 }
 
 /*Estilos para las diferentes pantallas*/
@@ -528,9 +531,9 @@ table img:hover {
   /*Centrar el footer*/
   text-align: center;
   /*Disminuir tamaño de los párrafos y la fuente*/
-  font-size: 0.6em;
+  font-size: 0.7em;
   /*Colocarlo en la parte inferior de la página*/
-  position: fixed; /*Posición*/
+  position: absolute; /*Posición*/
   bottom: 0; /*Posición en el eje Y*/
   width: 100%;
   /*Aplicar estilo negrita*/
@@ -595,20 +598,20 @@ table img:hover {
   }
   
   .Footer {
-  /*Centrar el footer*/
-  text-align: center;
-  /*Disminuir tamaño de los párrafos y la fuente*/
-  font-size: 0.6em;
-  /*Colocarlo en la parte inferior de la página*/
-  position: fixed; /*Posición*/
-  bottom: 0; /*Posición en el eje Y*/
-  width: 100%;
-  /*Aplicar estilo negrita*/
-  font-weight: bold;
-  /*Aplicar color de fuente*/
-  color: #ffffff;
-  background-color: #292929;
-    }
+    /*Centrar el footer*/
+    text-align: center;
+    /*Disminuir tamaño de los párrafos y la fuente*/
+    font-size: 0.6em;
+    /*Colocarlo en la parte inferior de la página*/
+    position: fixed; /*Posición*/
+    bottom: 0; /*Posición en el eje Y*/
+    width: 100%;
+    /*Aplicar estilo negrita*/
+    font-weight: bold;
+    /*Aplicar color de fuente*/
+    color: #ffffff;
+    background-color: #292929;
+      }
 }
 
 
@@ -668,18 +671,19 @@ table img:hover {
   }
 
   .Footer {
-  /*Centrar el footer*/
-  text-align: center;
-  /*Disminuir tamaño de los párrafos y la fuente*/
-  font-size: 0.6em;
-  /*Colocarlo en la parte inferior de la página*/
-  position: fixed; /*Posición*/
-  bottom: 0; /*Posición en el eje Y*/
-  width: 100%;
-  /*Aplicar estilo negrita*/
-  font-weight: bold;
-  /*Aplicar color de fuente*/
-  color: #ffffff;
-  background-color: #292929;
+    /*Centrar el footer*/
+    text-align: center;
+    /*Disminuir tamaño de los párrafos y la fuente*/
+    font-size: 0.6em;
+    /*Colocarlo en la parte inferior de la página*/
+    position: fixed; /*Posición*/
+    bottom: 0; /*Posición en el eje Y*/
+    width: 100%;
+    /*Aplicar estilo negrita*/
+    font-weight: bold;
+    /*Aplicar color de fuente*/
+    color: #ffffff;
+    background-color: #292929;
     }
+    
 }
